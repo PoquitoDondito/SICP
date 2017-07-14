@@ -1,6 +1,8 @@
 #lang sicp
 (inc 42)
 
+; 1.1.1
+
 486
 (+ 137 349)
 (- 1000 334)
@@ -16,6 +18,8 @@
    (+ (- 10 7)
       6))
 
+; 1.1.2
+
 (define size 2)
 size
 (* 5 size)
@@ -25,8 +29,12 @@ size
 (define circumference (* 2 pi radius))
 circumference
 
+; 1.1.3
+
 (* (+ 2(* 4 6))
    (+ 3 5 7))
+
+; 1.1.4
 
 (define (square x) (* x x))
 (square 21)
