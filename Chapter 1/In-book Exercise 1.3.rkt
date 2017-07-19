@@ -4,9 +4,9 @@
 (define b 10)
 (define c 15)
 (define (square x) (* x x))
+(define (sum-of-squares x y) (+ (square x) (square y)))
 
-
-(if (not (and (< a b)(< a c))) #t #f)
-(if (not (and (< b a)(< b c))) #t #f)
-(if (not (and (< c a)(< c b))) #t #f)
-
+(cond
+  ((and (or (> a b)(> a c))(or (> b a)(> b c))) (sum-of-squares a b))
+  ((and (or (> a b)(> a c))(or (> c a)(> c b))) (sum-of-squares a c))
+  ((and (or (> b a)(> b c))(or (> c a)(> c b))) (sum-of-squares b c)))
